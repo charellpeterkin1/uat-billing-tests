@@ -1,90 +1,125 @@
-
 # UAT Billing Test Automation Suite
 
-This project simulates a User Acceptance Testing (UAT) suite for a billing web application. It automates verification of routing logic for different client types (`retail`, `enterprise`, `gov`) and includes a login simulation using Selenium and Python.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Automation](https://img.shields.io/badge/Test-Automation-green)
+![Testing](https://img.shields.io/badge/Framework-pytest-orange)
 
-The goal is to demonstrate how a QA Engineer can build, structure, and run end-to-end automated tests, complete with mock login flow and routing assertions.
+This project simulates a **User Acceptance Testing (UAT) automation suite** for a billing web application.
+
+The test framework validates routing logic for different client types (`retail`, `enterprise`, `gov`) and includes a login simulation using **Python, Selenium, and pytest**.
+
+The goal of this project is to demonstrate how a QA engineer can build structured automated tests to validate system behavior, detect defects, and verify expected billing workflows.
+
+---
 
 ## Preview
 
-
-![Billing App Screenshot](uat-billing-screenshot.png)
+![Billing App Screenshot](uat-billing-screenshot.png)  
 ![Billing Test Results](uat-billing-screenshot-results.png)
 
-### Testing Scope
+---
+
+## Testing Scope
 
 This test suite validates:
 
 - Login workflow
-- Invoice routing logic for retail clients
-- Invoice routing logic for enterprise clients
-- Invoice routing logic for government clients
-
-#### Folder Structure
-
-- `automation/` – Python Selenium scripts for test automation  
-- `mock-app/` – Lightweight Flask app that simulates a real billing app  
-- `test-cases/` – Manual test documentation  
-- `results/` – Logs or output files from test runs  
+- Invoice routing logic for **retail clients**
+- Invoice routing logic for **enterprise clients**
+- Invoice routing logic for **government clients**
+- Correct routing behavior for different account types
 
 ---
 
-##### Tools & Technologies
+## Project Structure
 
-- Python 3.11+  
-- Selenium WebDriver  
-- Flask  
-- ChromeDriver  
-- Git  
+```
+uat-billing-tests/
+│
+├── automation/      # Python Selenium automation scripts
+├── mock-app/        # Flask app simulating a billing system
+├── test-cases/      # Manual test case documentation
+├── results/         # Output logs and screenshots from test runs
+├── tests/           # pytest automated tests
+├── requirements.txt
+└── README.md
+```
+---
+
+## Tech Stack
+
+- Python
+- Selenium WebDriver
+- pytest
+- Flask
+- ChromeDriver
+- Git
 
 ---
 
-How to Run Locally
+## How to Run Locally
 
-1. Clone the repo
+### 1. Clone the repository
+
 ```bash
-git clone https://github.com/charellpeterkin/uat-billing-tests.git
+git clone https://github.com/charellpeterkin1/uat-billing-tests.git
 cd uat-billing-tests
 ```
 
-2. Set up and activate virtual environment
+### 2. Create and activate a virtual environment
+
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-3. Start the mock billing app
+### 4. Start the mock billing application
+
 ```bash
 cd mock-app
 flask run
 ```
 
-4. In a second terminal, run the test
+### 5. Run the automation tests
+
 ```bash
 cd automation
 source ../venv/bin/activate
 python3 test_invoice_routing.py
 ```
 
-All test outcomes (e.g., login success, routing validation) will print directly to the terminal.
-
----
-
-Sample Test Output
+## Sample Test Output
 
 ```
-Login form filled successfully  
-Retail invoice routing passed  
-Enterprise invoice routing passed  
-Gov invoice routing passed  
+Login form filled successfully
+Retail invoice routing passed
+Enterprise invoice routing passed
+Gov invoice routing passed
 Test complete. Browser closed.
 ```
+## Why This Project Matters
 
----
+This project demonstrates:
 
-Author
+- QA automation using Python and Selenium
+- Automated validation of billing workflows
+- Structured test case design
+- Reproducible automated tests using pytest
+- End-to-end testing with a simulated application
 
-**Charell Peterkin**  
-QA Engineer | Technologist | Mom of two | Passionate about tech accessibility  
-[GitHub](https://github.com/charellpeterkin) | [LinkedIn](https://www.linkedin.com/in/charellpeterkin)
+## Author
+
+Charell Peterkin
+
+QA Automation | Software Testing | Python
+
+GitHub: https://github.com/charellpeterkin1
+
+LinkedIn: https://www.linkedin.com/in/charellpeterkin
+
