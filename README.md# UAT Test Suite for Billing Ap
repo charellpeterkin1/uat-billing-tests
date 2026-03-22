@@ -1,5 +1,5 @@
 
-# UAT Billing Test Automation Suite
+UAT Billing Test Automation Suite
 
 This project simulates a User Acceptance Testing (UAT) suite for a billing web application. It automates verification of routing logic for different client types (`retail`, `enterprise`, `gov`) and includes a login simulation using Selenium and Python.
 
@@ -7,7 +7,7 @@ The goal is to demonstrate how a QA Engineer can build, structure, and run end-t
 
 ---
 ```markdown
-## Testing Scope
+Testing Scope
 
 This test suite validates:
 
@@ -16,7 +16,7 @@ This test suite validates:
 - Invoice routing logic for enterprise clients
 - Invoice routing logic for government clients
 
-## Folder Structure
+Folder Structure
 
 - `automation/` – Python Selenium scripts for test automation  
 - `mock-app/` – Lightweight Flask app that simulates a real billing app  
@@ -25,7 +25,7 @@ This test suite validates:
 
 ---
 
-## Tools & Technologies
+Tools & Technologies
 
 - Python 3.11+  
 - Selenium WebDriver  
@@ -35,28 +35,28 @@ This test suite validates:
 
 ---
 
-## How to Run Locally
+How to Run Locally
 
-### 1. Clone the repo
+1. Clone the repo
 ```bash
 git clone https://github.com/charellpeterkin/uat-billing-tests.git
 cd uat-billing-tests
 ```
 
-### 2. Set up and activate virtual environment
+2. Set up and activate virtual environment
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3. Start the mock billing app
+3. Start the mock billing app
 ```bash
 cd mock-app
 flask run
 ```
 
-### 4. In a second terminal, run the test
+4. In a second terminal, run the test
 ```bash
 cd automation
 source ../venv/bin/activate
@@ -67,7 +67,7 @@ All test outcomes (e.g., login success, routing validation) will print directly 
 
 ---
 
-## Sample Test Output
+Sample Test Output
 
 ```
 Login form filled successfully  
@@ -79,7 +79,7 @@ Test complete. Browser closed.
 
 ---
 
-## Author
+Author
 
 **Charell Peterkin**  
 QA Engineer | Technologist | Mom of two | Passionate about tech accessibility  
