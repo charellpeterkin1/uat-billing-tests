@@ -17,6 +17,10 @@ The goal of this project is to demonstrate how a QA engineer can build structure
 ![Billing App Screenshot](uat-billing-screenshot.png)  
 ![Billing Test Results](uat-billing-screenshot-results.png)
 
+## Automated Test Results
+
+![pytest test results](results/test-results.png)
+
 ---
 
 ## Testing Scope
