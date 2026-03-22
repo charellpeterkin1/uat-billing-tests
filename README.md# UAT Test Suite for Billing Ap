@@ -1,13 +1,22 @@
 
-# 🧪 UAT Billing Test Automation Suite
+# UAT Billing Test Automation Suite
 
 This project simulates a User Acceptance Testing (UAT) suite for a billing web application. It automates verification of routing logic for different client types (`retail`, `enterprise`, `gov`) and includes a login simulation using Selenium and Python.
 
 The goal is to demonstrate how a QA Engineer can build, structure, and run end-to-end automated tests, complete with mock login flow and routing assertions.
 
 ---
+```markdown
+## Testing Scope
 
-## 📁 Folder Structure
+This test suite validates:
+
+- Login workflow
+- Invoice routing logic for retail clients
+- Invoice routing logic for enterprise clients
+- Invoice routing logic for government clients
+
+## Folder Structure
 
 - `automation/` – Python Selenium scripts for test automation  
 - `mock-app/` – Lightweight Flask app that simulates a real billing app  
@@ -16,7 +25,7 @@ The goal is to demonstrate how a QA Engineer can build, structure, and run end-t
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 - Python 3.11+  
 - Selenium WebDriver  
@@ -26,7 +35,7 @@ The goal is to demonstrate how a QA Engineer can build, structure, and run end-t
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 ### 1. Clone the repo
 ```bash
@@ -54,23 +63,23 @@ source ../venv/bin/activate
 python3 test_invoice_routing.py
 ```
 
-✅ All test outcomes (e.g., login success, routing validation) will print directly to the terminal.
+All test outcomes (e.g., login success, routing validation) will print directly to the terminal.
 
 ---
 
-## 🧪 Sample Test Output
+## Sample Test Output
 
 ```
-✅ Login form filled successfully  
-✅ Retail invoice routing passed  
-✅ Enterprise invoice routing passed  
-✅ Gov invoice routing passed  
-📜 Test complete. Browser closed.
+Login form filled successfully  
+Retail invoice routing passed  
+Enterprise invoice routing passed  
+Gov invoice routing passed  
+Test complete. Browser closed.
 ```
 
 ---
 
-## 👩🏽‍💻 Author
+## Author
 
 **Charell Peterkin**  
 QA Engineer | Technologist | Mom of two | Passionate about tech accessibility  
