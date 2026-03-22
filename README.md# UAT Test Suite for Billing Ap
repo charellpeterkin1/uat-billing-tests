@@ -5,8 +5,10 @@ This project simulates a User Acceptance Testing (UAT) suite for a billing web a
 
 The goal is to demonstrate how a QA Engineer can build, structure, and run end-to-end automated tests, complete with mock login flow and routing assertions.
 
----
-```markdown
+## Preview
+
+![Project Screenshot](uat-billing-screenshot.png) (uat-billing-screenshot-results.png)
+
 Testing Scope
 
 This test suite validates:
