@@ -19,7 +19,7 @@ The goal of this project is to demonstrate how a QA engineer can build structure
 
 ## Automated Test Results
 
-![pytest test results](results/test-results.png)
+![pytest test results](test-results.png)
 
 ---
 
