@@ -1,5 +1,5 @@
 
-UAT Billing Test Automation Suite
+# UAT Billing Test Automation Suite
 
 This project simulates a User Acceptance Testing (UAT) suite for a billing web application. It automates verification of routing logic for different client types (`retail`, `enterprise`, `gov`) and includes a login simulation using Selenium and Python.
 
@@ -7,10 +7,11 @@ The goal is to demonstrate how a QA Engineer can build, structure, and run end-t
 
 ## Preview
 
-![UAT-Billing-Test Screenshot](uat-billing-screenshot.png)
-![UAT-Billing-Test Results Screenshot](uat-billing-screenshot-results.png)
 
-Testing Scope
+![Billing App Screenshot](uat-billing-screenshot.png)
+![Billing Test Results](uat-billing-screenshot-results.png)
+
+### Testing Scope
 
 This test suite validates:
 
@@ -19,7 +20,7 @@ This test suite validates:
 - Invoice routing logic for enterprise clients
 - Invoice routing logic for government clients
 
-Folder Structure
+#### Folder Structure
 
 - `automation/` – Python Selenium scripts for test automation  
 - `mock-app/` – Lightweight Flask app that simulates a real billing app  
@@ -28,7 +29,7 @@ Folder Structure
 
 ---
 
-Tools & Technologies
+##### Tools & Technologies
 
 - Python 3.11+  
 - Selenium WebDriver  
